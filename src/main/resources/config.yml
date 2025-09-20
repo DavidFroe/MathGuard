@@ -1,0 +1,38 @@
+enabled-worlds: ["world"]
+block-types: ["CHEST","TRAPPED_CHEST","BARREL","CRAFTING_TABLE"]
+max-result: 99
+rarity: 1.0
+
+title-colors:
+  question: "§a"
+  input: "§e"
+
+# Aufgabentypen an/aus
+modes:
+  addition: true
+  subtraction_full: true
+  subtraction_simple_ones: true
+  subtraction_mid_10_20: true
+  multiplication_small_table: true
+  multiplication_double_only: true
+
+# Belohnungen
+rewards:
+  exp:
+    enabled: true
+    amount: 3          # rohe XP (nicht Levels)
+  vault:
+    enabled: false
+    amount: 2.0        # braucht Vault + Economy-Plugin
+  item:
+    enabled: true
+    type: "COOKED_BEEF"
+    amount: 1
+
+# Strafen bei falscher Antwort
+penalties:
+  mob_on_wrong:
+    enabled: true
+    type: "SILVERFISH"
+    count: 1
+    chance: 1.0        # 0..1
